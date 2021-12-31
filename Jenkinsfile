@@ -54,7 +54,7 @@ when { expression { params.RUN_FRONTEND_TESTS } }
 
             steps {
 
-                echo 'Deploying...'
+                echo 'Step not executed'
 
             }
 
