@@ -49,7 +49,10 @@ when { expression { params.RUN_FRONTEND_TESTS } }
             when {
 
                 expression { env.GIT_BRANCH == 'origin/main' }
-
+                beforeInput true
+            }
+            input {
+                message 'Deploy the application?'
             }
 
             steps {
