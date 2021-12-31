@@ -11,7 +11,7 @@ pipeline {
     }
 
     stages {
-
+parallel{
         stage('Backend Tests') {
 
             steps {
@@ -31,7 +31,7 @@ pipeline {
             }
 
         }
-
+}
     }
 
 }
